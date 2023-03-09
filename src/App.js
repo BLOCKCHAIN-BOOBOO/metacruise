@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/home';
+import Navbar from './components/navbar';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <div className='text-md text-red-600 font-semibold'>Metacruise APP</div>
+      <Navbar/>
+      <Home/>
+     
     </div>
   );
 }

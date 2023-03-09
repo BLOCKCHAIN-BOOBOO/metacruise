@@ -1,0 +1,88 @@
+html,body{
+    height:100% !important;
+  }
+  body{
+      background:#05003b;
+  } 
+  
+
+.home-bg-color{
+    background-color: #05003b;
+}
+.home-button{
+    color: white;
+    background: linear-gradient(to right, #f7b757, #f8426e)!important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 10px !important;
+    display: inline-block;
+}
+
+.home-button-gradient-line {
+    position: relative;
+    padding: 10px 20px;
+    background: #fff;
+    margin: 5px;  
+    /* border-radius: 5px; */
+  }
+  .home-button-gradient-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px !important; 
+    border: 2px solid transparent;
+    background: linear-gradient(45deg,#f7b757,#f8426e) border-box;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) padding-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  .icon-bg{
+    color: white;
+    background: linear-gradient(to bottom, #f7b757, #f8426e)!important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 10px !important;
+    display: inline-block;
+    border-radius: 10px;
+    width:35px;
+  }
+  .linear-text-color{
+        background: -webkit-linear-gradient(60deg, #8a08ad, #5c61ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
+  .view-button-gradient-line {
+    position: relative;
+    padding: 10px 20px;
+    background: #fff;
+    margin: 5px;  
+    /* border-radius: 5px; */
+  }
+  .view-button-gradient-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px !important; 
+    border: 2px solid transparent;
+    background: linear-gradient(45deg,#f7b757,#f8426e) border-box;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) padding-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  @media (min-width: 1024px) {
+    .align {
+      padding: 0 5rem; 
+    }
+    }
