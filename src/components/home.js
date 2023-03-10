@@ -36,7 +36,7 @@ const Home = () => {
   <div className='home-bg-color'>
      <section className="py-2 md:py-5 relative pointer-default" id="home">
 
-        <div className="container mt-2 mx-auto self-center justify-center flex flex-col md:flex md:flex-col lg:flex lg:flex-row align">
+        <div className="container mt-2 py-10 mx-auto self-center justify-center flex flex-col md:flex md:flex-col lg:flex lg:flex-row align">
           <div
             className="relative flex flex-col justify-center self-center pointer-default"
             style={{ cursor: "default" }}
@@ -65,31 +65,36 @@ const Home = () => {
                 </span>
               </a>
              <button className='text-white text-md rounded-3xl  home-button font-semibold'>OPEN IN BROWSER</button>
+            
             </div>
+           
           </div>
 
           {/* <div className="flex justify-between ">
             <div className=" mx-auto">  */}
             {/* mt-5 w-72 h-72 sm:w-96 sm:h-96 md:w-96 md:h-96 lg:w-96 lg:h-96  rounded-full */}
               {/* <div className='w-full flex'> */}
-                <img src={homefirst} alt="" className="image1 sm:w-2/4 sm:h-2/4 md:w-3/4 md:h-2/4 mx-auto" />
-                {/* </div> */}
+                <img src={homefirst} alt="" className="image1 mx-auto" />
+                {/* </div> sm:w-2/4 sm:h-2/4 md:w-2/4 md:h-2/4 */}
             {/* </div>
             <div className="flex flex-col md:flex md:flex-col mx-auto absolute right-0 bottom-0"></div>
           </div> */}
         </div>
       </section>
 
-      <section className="py-2 md:py-5 relative pointer-default" id="about">
 
-<div className="container justify-center self-center mt-20 mx-auto flex flex-col md:flex md:flex-col lg:flex lg:flex-row align">
+      <div className='color-shade float-right'></div>
+      <div className='color-shade-right float-right'></div>
+      <section className="py-2 md:py-5 relative pointer-default" id="about" >      
+
+<div className="container justify-center self-center mx-auto flex flex-col md:flex md:flex-col lg:flex lg:flex-row align">
  
 
   {/* <div className="flex justify-between ">
     <div className=" mt-5 w-72 h-72 sm:w-96 sm:h-96 md:w-96 md:h-96 lg:w-96 lg:h-96 mx-auto rounded-full">   */}
      {/* <div> */}
-       <img src={homesecond} alt="" className="w-2/4 image2 mx-auto" />
-       {/* </div> */}
+       <img src={homesecond} alt="" className=" image2 mx-auto" />
+       {/* </div> md:w-2/4 */}
      {/* </div>
     <div className="flex flex-col md:flex md:flex-col mx-auto absolute right-0 bottom-0"></div> 
   </div> */}
@@ -114,7 +119,8 @@ const Home = () => {
 </section>
 
 
-<section className="py-2 md:py-5 relative pointer-default" id="docs">
+<div className='color-shade float-left'></div>
+<section className="py-10 md:py-10 relative pointer-default" id="docs">
 <div className="about-background mx-auto py-10 self-center text-center justify-center flex flex-col md:flex md:flex-col lg:flex lg:flex-row align"
 style={{backgroundImage: `url(${docsbg})`,
   backgroundRepeat: "no-repeat", 
@@ -126,9 +132,9 @@ style={{backgroundImage: `url(${docsbg})`,
           
           <div className='flex flex-col xl:w-3/5 md:w-3/5 sm:w-full w-full self-center justify-center '>
           
-             <span className="text-gray-300 xl:w-3/4 md:w-3/4 sm:w-full w-full self-center font-semibold xl:text-5xl md:text-4xl sm:text-4xl text-4xl">
+             <span className="text-gray-300 xl:w-3/4 md:w-3/4 sm:w-full py-6 w-full self-center font-semibold xl:text-5xl md:text-4xl sm:text-4xl text-4xl">
                 Participate in onboard activities and events</span>
-            <span className="text-gray-400 mt-5 text-lg w-full font-normal">
+            <span className="text-gray-400 mt-5 mb-10 text-lg w-full font-normal">
      from poolside parties to themed dinners and more Discover hidden secrets and unlock new areas of the ship as you progress 
      through the game Earn rewards and prizes for completing challenges and achievements
             </span>
@@ -146,9 +152,11 @@ style={{backgroundImage: `url(${docsbg})`,
         </div>
 </section>
 
+<div className='color-shade float-left'></div>
+<div className='color-shade float-right'></div>
 <section className="py-2 md:py-5 relative pointer-default" id="event">
 <div className='container mt-2 mx-auto self-center justify-center align'>
-    <div className='text-5xl text-white font-semibold float-left text-left pb-10'>Latest News</div>
+    <div className='text-4xl text-white font-semibold float-left text-left pb-10'>Latest News</div>
   
     <Carousel
              swipeable={true}
@@ -280,6 +288,9 @@ style={{backgroundImage: `url(${docsbg})`,
           </div>
     </div>
 </section>
+
+<div className='color-shade float-left'></div>
+<div className='color-shade float-right'></div>
 
 <footer id="footer" style={{height:"5.5rem"}}>
       <section className="relative"> 

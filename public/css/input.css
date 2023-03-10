@@ -116,7 +116,7 @@ html,body{
     z-index: 2;
     position: relative;
 }
-@media (max-width: 1024px) {
+@media(min-width:279px) and (max-width: 1024px) {
   .image1 {
     height: 25rem;
     /* max-width: 50rem;  */
@@ -126,17 +126,27 @@ html,body{
  
   @media (min-width: 1024px) {
     .image1 {
-      height: 50rem;
+      height: 32rem;
       /* max-width: 50rem;  */
       /* text-align: left; */   
   }
   }
  
+  @media(min-width:279px) and (max-width: 1024px) {
   .image2 {
     height: 32rem;
     max-width: 40rem; 
     /* text-align: left; */   
 }
+  }
+
+  @media (min-width: 1024px) {
+    .image2 {
+      height: 32rem;
+      /* max-width: 50rem;  */
+      /* text-align: left; */   
+  }
+  }
 
 
   .about-background {
@@ -176,4 +186,30 @@ html,body{
   top:0;
   /* display:none; */
   display:flex;
+}
+
+.color-shade{
+  /* height: 7px;
+    width: 7px; */
+    border-radius: 50px;
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: #410051;
+    position: absolute;
+    /* top: 31%;
+    right: 30%; */
+    box-shadow: 0 0 100px 20px #fff, 0 0 100px 120px #410051;
+  /* color:#410051; */
+}
+
+.color-shade-right{
+  /* height: 7px;
+    width: 7px; */
+    border-radius: 50px;
+    /* background: rgba(255, 255, 255, 0.5); */
+    background: #410051;
+    position: absolute;
+    top: 105%;
+    right: 7%;
+    box-shadow: 0 0 100px 20px #fff, 0 0 100px 120px #410051;
+  /* color:#410051; */
 }
