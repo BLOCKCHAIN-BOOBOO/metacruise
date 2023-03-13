@@ -49,7 +49,7 @@ const Home = () => {
             </h1>
             <span className='text-lg mb-5 text-center text-gray-200 lg:text-left font-semibold'>Your Ultimate Virtual Escape</span>
            
-            <p className="mb-8 text-center text-gray-400 text-sm lg:text-left">
+            <p className="mb-8 mt-4 text-center text-gray-400 text-xl lg:text-left">
               Escape to the high seas and embark on a one-of-a-kind adventure with the [metaCruise] Metaverse experience.
               From the moment you step aboard our virtual ship.you'll be transportedto a world of luxury,relaxation and adventure.
             </p>
