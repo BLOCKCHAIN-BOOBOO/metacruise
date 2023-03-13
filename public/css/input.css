@@ -123,11 +123,19 @@ html,body{
     /* text-align: left; */   
 }
 }
+@media(min-width:1024px) and (max-width: 1180px) {
+  .image1 {
+    height: 34rem;
+    /* max-width: 50rem;  */
+    /* text-align: left; */   
+}
+}
  
-  @media (min-width: 1024px) {
+  @media (min-width: 1180px) {
     .image1 {
       /* height: 32rem; */
-      height:50rem;
+      height:40rem;
+      /* height:50rem; */
       /* max-width: 50rem;  */
       /* text-align: left; */   
   }
@@ -135,8 +143,9 @@ html,body{
  
   @media(min-width:279px) and (max-width: 1024px) {
   .image2 {
-    height: 32rem;
-    max-width: 40rem; 
+    /* height: 32rem; */
+    height:25rem;
+    /* max-width: 40rem;  */
     /* text-align: left; */   
 }
   }
@@ -166,13 +175,20 @@ html,body{
   content:"\f0c9";
   font-size:25px;
   font-family: FontAwesome;
-  color:#fff;
+  color:#fff;  
+  right:10px;
+  position: relative;
 }
 .bar-icon.close-icon::before{ 
   content:"\2612" !important;
   font-size:25px;
   font-family: FontAwesome;
-  color:#fff;
+  /* color:#fff; */
+  color:#000;
+  z-index:9999;
+  right:10px;
+  /* margin-top:-45px; */
+  position:relative;
 }
 
 /* close navbar */

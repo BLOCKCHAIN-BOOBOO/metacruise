@@ -33,7 +33,7 @@ const Home = () => {
       };
  
   return (
-  <div className='home-bg-color'>
+  <div className='home-bg-color p-3'>
      <section className="py-2 md:py-5 relative pointer-default" id="home">
 
         <div className="container mt-2 py-10 mx-auto self-center justify-center flex flex-col md:flex md:flex-col lg:flex lg:flex-row align">
@@ -50,7 +50,7 @@ const Home = () => {
             <span className='text-lg mb-5 text-center text-gray-200 lg:text-left font-semibold'>Your Ultimate Virtual Escape</span>
            
             <p className="mb-8 text-center text-gray-400 text-sm lg:text-left">
-              Escape to the high seas and embark on a one-of-a-kind adventure with the [Cruise Ship Name] Metaverse experience.
+              Escape to the high seas and embark on a one-of-a-kind adventure with the [metaCruise] Metaverse experience.
               From the moment you step aboard our virtual ship.you'll be transportedto a world of luxury,relaxation and adventure.
             </p>
             <div className="flex flex-col lg:flex lg:flex-row mb-4 lg:mb-10 self-center lg:self-start">
@@ -311,8 +311,9 @@ style={{backgroundImage: `url(${docsbg})`,
           <div className='flex flex-col self-center align-middle'>
           <span className='text-xl text-gray-200 mt-5 mb-5 font-semibold'>Subscribe to our newsletter</span>
           <div className='flex flex-row'>
-          <input type="text" placeholder="Placeholder" className='mt-2 py-3 px-2 rounded-3xl bg-white text-gray-600' />  
-          <button className='text-white w-full -ml-20 text-md rounded-3xl px-3 py-2 icon-bg font-semibold'>DEFAULT</button>  
+          <input type="text" placeholder="Type..." className='mt-2 py-3 px-2 rounded-3xl bg-white text-gray-600' />  
+          <button className='text-white w-full -ml-20 text-md rounded-3xl px-3 py-2 icon-bg font-semibold'>Submit</button>  
+          {/* DEFAULT */}
           </div>
           </div>
           <div className='flex flex-col self-center align-middle'>

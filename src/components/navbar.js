@@ -21,15 +21,15 @@ const Navbar = () => {
   {/* <div className="container mx-auto flex justify-between relative md:flex md:items-center md:justify-between py-4 md:py-4"> */}
  
   <div id="mySidenav" className="sidenav">
-    <div className='flex float-right self-end justify-end'>
+    <div className='flex float-right self-end mt-4 justify-end'>
   <div className='flex float-right justify-right self-end'>
-    <button className='text-white text-md rounded-md  home-button font-semibold'>JOIN OUR DISCORD</button>
+    <a className='text-white text-md rounded-md  home-button font-semibold'>JOIN OUR DISCORD</a>
     <div className='color-shade shadow-2xl'></div>
     </div>
   <div className="block float-right self-center text-3xl relative cursor-pointer md:hidden">
           <button
-            className="flex text-gray-300 left-2 top-8 mx-2 md:mx-0 bar-icon"
-            // float-right right-8
+            className="flex text-gray-300 top-8 mx-2 md:mx-0 bar-icon"
+            // float-right right-8  right-4
             onClick={(e) => mobileMenutoggle(e)}
           ></button>
         </div>
@@ -38,19 +38,19 @@ const Navbar = () => {
   <img
                       src={metacruise}
                       height="80" width="80"
-                      className="rounded-lg self-center"
+                      className="rounded-lg m-2 self-center"
                       alt=""
                     /> 
 
 
     <ul
-      className="fixed sm:flex  sm:flex-col flex-col md:flex-row xl:flex-row sm:mt-10 mt-10 md:mt-0 
+      className="fixed sm:flex  sm:flex-col flex-col md:flex-row xl:flex-row sm:-mt-4 -mt-4 md:mt-0 
       xl:mt-0 w-full bg-white sm:bg-white md:bg-transparent lg:bg-transparent font-bold md:w-auto
        md:flex md:items-center absolute z-[1] md:static md:z-auto
   left-0 py-2 opacity-0 md:opacity-100 top-[-400px] transition-all ease-in duration-500"
     >
      
-      <li className="cursor-pointer mx-4 xl:my-0 md:my-0 sm:my-2 my-2 list-none text-xl xl:text-white md:text-white sm:text-black text-black">
+      <li className="cursor-pointer mx-4 xl:my-0 md:my-0 sm:pt-10 pt-10 md:pt-0 xl:pt-0 sm:my-2 my-2 list-none text-xl xl:text-white md:text-white sm:text-black text-black">
         <a  onClick={(e) => mobileMenutoggle(e)}
           href="#home"  className="hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200
            md:text-gray-200 sm:text-black text-black"
