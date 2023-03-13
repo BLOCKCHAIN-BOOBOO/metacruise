@@ -103,6 +103,9 @@ const Home = () => {
     className="relative flex flex-col justify-center self-center pointer-default"
     style={{ cursor: "default" }}
   >
+    <div className='text-left float-left mb-5'>
+      <span className='text-3xl text-gray-400 border-b-2 border-gray-400'>About Us</span>
+      </div>
     <h2 className=" mb-5 text-center font-semibold text-gray-300 lg:self-start xl:text-6xl md:text-5xl sm:text-5xl text-4xl">
     Fully immersive 3D virtual environment
     </h2>
@@ -153,7 +156,7 @@ style={{backgroundImage: `url(${docsbg})`,
 </section>
 
 <div className='color-shade float-left'></div>
-<div className='color-shade float-right'></div>
+<div className='color-shade-right1 float-right'></div>
 <section className="py-2 md:py-5 relative pointer-default" id="event">
 <div className='container mt-2 mx-auto self-center justify-center align'>
     <div className='text-4xl text-white font-semibold float-left text-left pb-10'>Latest News</div>
