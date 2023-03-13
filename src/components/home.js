@@ -106,7 +106,7 @@ const Home = () => {
     <div className='text-left float-left mb-5'>
       <span className='text-3xl text-gray-400 border-b-2 border-gray-400'>About Us</span>
       </div>
-    <h2 className=" mb-5 text-center font-semibold text-gray-300 lg:self-start xl:text-6xl md:text-5xl sm:text-5xl text-4xl">
+    <h2 className=" mb-5 text-center font-semibold text-gray-300 lg:text-left lg:self-start xl:text-6xl md:text-5xl sm:text-5xl text-4xl">
     Fully immersive 3D virtual environment
     </h2>
    
@@ -123,12 +123,14 @@ const Home = () => {
 
 
 <div className='color-shade float-left'></div>
-<section className="py-10 md:py-10 relative pointer-default" id="docs">
-<div className="about-background mx-auto py-10 self-center text-center justify-center flex flex-col md:flex md:flex-col lg:flex lg:flex-row align"
+<section className="relative py-28 pointer-default" id="docs">
+{/* py-10 md:py-10  */}
+<div className="about-background mx-auto self-center text-center justify-center flex flex-col md:flex md:flex-col lg:flex lg:flex-row align"
 style={{backgroundImage: `url(${docsbg})`,
   backgroundRepeat: "no-repeat", 
   backgroundSize: "cover"
 }}  
+// py-10
 
 >
           <div className="relative flex flex-col justify-center pointer-default" style={{cursor:"default"}}>
@@ -157,9 +159,9 @@ style={{backgroundImage: `url(${docsbg})`,
 
 <div className='color-shade float-left'></div>
 <div className='color-shade-right1 float-right'></div>
-<section className="py-2 md:py-5 relative pointer-default" id="event">
-<div className='container mt-2 mx-auto self-center justify-center align'>
-    <div className='text-4xl text-white font-semibold float-left text-left pb-10'>Latest News</div>
+<section className="relative py-28 pointer-default" id="event">
+<div className='container mx-auto self-center justify-center align'>
+    <div className='text-4xl text-white font-semibold float-left pt-5 text-left pb-5'>Latest News</div>
   
     <Carousel
              swipeable={true}
@@ -281,7 +283,7 @@ style={{backgroundImage: `url(${docsbg})`,
           <a
                 style={{ margin: "10px !important" }}
                 className="view-button-gradient-line rounded-sm bg-transparent text-white m-2 
-               hover:bg-white hover:text-black"
+               hover:bg-white hover:rounded-xl hover:text-black"
               >
                 <span className="text-orange-500 text-md font-semibold px-0 ">
                   {" "}
@@ -311,19 +313,22 @@ style={{backgroundImage: `url(${docsbg})`,
           <div className='flex flex-col self-center align-middle'>
           <span className='text-xl text-gray-200 mt-5 mb-5 font-semibold'>Subscribe to our newsletter</span>
           <div className='flex flex-row'>
-          <input type="text" placeholder="Type..." className='mt-2 py-3 px-2 rounded-3xl bg-white text-gray-600' />  
-          <button className='text-white w-full -ml-20 text-md rounded-3xl px-3 py-2 icon-bg font-semibold'>Submit</button>  
+          <input type="text" placeholder="Type..." className='pr-24 px-2 w-96 rounded-full bg-white text-gray-600' />  
+         <div className='-ml-24 align-middle self-center flex'>
+         <button className='text-white w-full text-md rounded-3xl px-3 py-2 hover:text-black icon-bg font-semibold'>Submit</button> 
+          </div> 
+          
           {/* DEFAULT */}
           </div>
           </div>
           <div className='flex flex-col self-center align-middle'>
             <span className='text-xl text-gray-200 mt-5 mb-5 font-semibold'>Follow us</span>
            <div className='flex flex-row'> 
-           <a className='icon-bg'> <i className='fa fa-facebook text-white'></i></a>
-            <a className='icon-bg'> <i className='fa fa-twitter text-white'></i></a>
-            <a className='icon-bg'> <i className='fa fa-instagram text-white'></i></a>
-            <a className='icon-bg'> <i className='fa fa-linkedin text-white'></i></a>
-            <a className='icon-bg'> <i className='fa fa-youtube text-white'></i></a>
+           <a className='icon-bg'> <i className='fa fa-facebook text-white hover:text-black'></i></a>
+            <a className='icon-bg'> <i className='fa fa-twitter text-white hover:text-black'></i></a>
+            <a className='icon-bg'> <i className='fa fa-instagram text-white hover:text-black'></i></a>
+            <a className='icon-bg'> <i className='fa fa-linkedin text-white hover:text-black'></i></a>
+            <a className='icon-bg'> <i className='fa fa-youtube text-white hover:text-black'></i></a>
             </div>
           </div>
           </div>

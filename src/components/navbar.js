@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
          
 
-<div className="w-full align z-40 absolute " style={{position: "sticky"}}> 
+<div className="w-full align z-40 absolute nav-bg " style={{position: "fixed"}}> 
   <nav className="w-full z-40 relative">
   {/* <div className="container mx-auto flex justify-between relative md:flex md:items-center md:justify-between py-4 md:py-4"> */}
  
@@ -37,7 +37,7 @@ const Navbar = () => {
  <div className='flex float-left'>
   <img
                       src={metacruise}
-                      height="80" width="80"
+                      height="60" width="60"
                       className="rounded-lg m-2 self-center"
                       alt=""
                     /> 

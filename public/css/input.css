@@ -20,7 +20,14 @@ html,body{
     margin: 10px !important;
     display: inline-block;
 }
-
+/* .active{
+  color:#fff;
+  font-size: 26px !important;
+  font-weight: 700;
+ } */
+.nav-bg{
+  background:#05003b;
+}
 .home-button-gradient-line {
     position: relative;
     padding: 10px 20px;
@@ -55,11 +62,14 @@ html,body{
     border-radius: 10px;
     width:35px;
   }
-  .linear-text-color{
-        background: -webkit-linear-gradient(60deg, #8a08ad, #5c61ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+  .view-button-gradient-line {
+    position: relative;
+    padding: 10px 20px;
+    background: #fff;
+    margin: 5px;  
+    /* border-radius: 5px; */
   }
+  
   .view-button-gradient-line {
     position: relative;
     padding: 10px 20px;
