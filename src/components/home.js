@@ -12,6 +12,15 @@ import metacruise from "../images/metacruise.png";
 import docsbg from "../images/docs-bg.png"
 
 const Home = () => {
+ 
+  // const [active, setActive] = useState();
+
+  // const activelink = id => {
+  //   setActive(id);
+  // };
+
+
+
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
@@ -171,16 +180,16 @@ style={{backgroundImage: `url(${docsbg})`,
              responsive={responsive}
              ssr={true} // means to render carousel on server-side.
              infinite={true}
-             // autoPlay={window.deviceType !== "mobile" ? true : false}
-             // autoPlaySpeed={2000}
+             autoPlay={window.deviceType !== "mobile" ? true : false}
+             autoPlaySpeed={3000}
              keyBoardControl={true}
-             customTransition="all .5"
-             transitionDuration={500}
+             customTransition="all .7"
+             transitionDuration={600}
              containerClass="carousel-container w-full py-10"
-             // removeArrowOnDeviceType={["tablet", "mobile"]}
+            //  removeArrowOnDeviceType={["tablet", "mobile"]}
              // deviceType={this.props.deviceType}
              dotListClass="custom-dot-list-style"
-            //  itemClass="carousel-item-padding-40-px "
+            itemClass="carousel-item-padding-40-px "
           >
             <div className="star-div">
              

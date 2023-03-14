@@ -1,17 +1,45 @@
 
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import metacruise from "../images/metacruise.png";
+
 
 
 const Navbar = () => {
 
+//   const [page, setPage] = useState(pathname);
+
+// const prevPage = usePrevious(pathname);
+
+// useEffect(() => {
+//   if (pathname !== prevPage) {
+//     setFadeEffectVisible(true);
+//     setPage(page);
+//   }
+// }, [pathname]);
+
+
+  
+  const [path, setPath] = useState("Home");
+console.log("path",path)
+  // const url = "https://google.com/music/playlist";
+  const url=window.location.href;
+  console.log(url)
+  const lastSegment = url.substring(url.lastIndexOf("#") + 1); 
+  console.log(lastSegment);
+
+
   const mobileMenutoggle = (e) => {
+    // setPath(path);
     let lists = document.querySelector("ul");
     lists.classList.toggle("ul-close");
 
     let list = document.querySelector("button");
     list.classList.toggle("close-icon");
   };
+
+// useEffect(()=>{
+//   console.log(lastSegment)
+// },[lastSegment])
 
   return (
          
@@ -51,31 +79,61 @@ const Navbar = () => {
     >
      
       <li className="cursor-pointer mx-4 xl:my-0 md:my-0 sm:pt-10 pt-10 md:pt-0 xl:pt-0 sm:my-2 my-2 list-none text-xl xl:text-white md:text-white sm:text-black text-black">
-        <a  onClick={(e) => mobileMenutoggle(e)}
-          href="#home"  className="hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200
-           md:text-gray-200 sm:text-black text-black"
+        <a  onClick={(e) => {mobileMenutoggle(e);setPath("home")}}
+          href="#home" 
+          //  className="hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200
+          //  md:text-gray-200 sm:text-black text-black"
+
+           className={`hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200
+           md:text-gray-200 sm:text-black text-black +
+           ${
+             path === "home" ? "active"  : ""
+           }`}
         >
           Home
         </a>
       </li>
       <li className="cursor-pointer mx-4 xl:my-0 md:my-0 sm:my-2 my-2 list-none text-xl xl:text-gray-200
        md:text-gray-200 sm:text-black text-black">
-        <a  onClick={(e) => mobileMenutoggle(e)}
-         href="#about" className="hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200 md:text-gray-200 sm:text-black text-black"
+        <a  onClick={e =>{mobileMenutoggle(e);setPath("about")}}
+         href="#about" 
+        //  className="hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200 
+        //  md:text-gray-200 sm:text-black text-black"
+
+        className={`hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200 
+          md:text-gray-200 sm:text-black text-black +
+        ${
+          path === "about" ? "active"  : ""
+        }`}
+
         >
           About
         </a>
       </li>
       <li className="cursor-pointer mx-4 xl:my-0 md:my-0 sm:my-2 my-2 list-none text-xl xl:text-gray-200 md:text-gray-200 sm:text-black text-black">
-        <a href="#docs"  onClick={(e) => mobileMenutoggle(e)}
-          className="hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200 md:text-gray-200 sm:text-black text-black"
+        <a href="#docs"  onClick={(e) => {mobileMenutoggle(e);setPath("docs")}}
+          // className="hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200 
+          // md:text-gray-200 sm:text-black text-black"
+          className={`hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200 
+           md:text-gray-200 sm:text-black text-black +
+          ${
+            path === "docs" ? "active"  : ""
+          }`}
+
         >
           Docs
         </a>
       </li>
       <li className="cursor-pointer mx-4 xl:my-0 md:my-0 sm:my-2 my-2 list-none text-xl xl:text-gray-200 md:text-gray-200 sm:text-black text-black">
-        <a href="#event"  onClick={(e) => mobileMenutoggle(e)}
-          className="hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200 md:text-gray-200 sm:text-black text-black"
+        <a href="#event"  onClick={(e) => {mobileMenutoggle(e);setPath("event")}}
+          // className="hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200 
+          // md:text-gray-200 sm:text-black text-black"
+
+          className={`hover:text-2xl active:text-2xl text-xl duration-500 xl:text-gray-200 
+          md:text-gray-200 sm:text-black text-black +
+         ${
+           path === "event" ? "active"  : ""
+         }`}
         >
           Event
         </a>

@@ -20,11 +20,11 @@ html,body{
     margin: 10px !important;
     display: inline-block;
 }
-/* .active{
+.active{
   color:#fff;
   font-size: 26px !important;
   font-weight: 700;
- } */
+ }
 .nav-bg{
   background:#05003b;
 }
@@ -103,7 +103,8 @@ html,body{
       /* height:240px;
       width:190px; */
       height:400px;
-      width:350px;
+      /* width:350px; */
+      width:300px;
     }
     .news-card img{
       height:380px;
@@ -115,7 +116,8 @@ html,body{
     .react-multi-carousel-item {
       transform-style: preserve-3d;
       backface-visibility: hidden;
-      width: 350px !important;
+      /* width: 350px !important; */
+      width:320px !important;
   }
   .react-multiple-carousel__arrow::before {
     font-size: 20px;
