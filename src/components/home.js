@@ -180,8 +180,8 @@ style={{backgroundImage: `url(${docsbg})`,
              responsive={responsive}
              ssr={true} // means to render carousel on server-side.
              infinite={true}
-             autoPlay={window.deviceType !== "mobile" ? true : false}
-             autoPlaySpeed={3000}
+            //  autoPlay={window.deviceType !== "mobile" ? true : false}
+            //  autoPlaySpeed={3000}
              keyBoardControl={true}
              customTransition="all .7"
              transitionDuration={600}
