@@ -189,7 +189,7 @@ style={{backgroundImage: `url(${docsbg})`,
              transitionDuration={600}
              containerClass="carousel-container justify-center w-full py-10"
             //  removeArrowOnDeviceType={["tablet", "mobile"]}
-            //  deviceType={this.props.deviceType}
+             deviceType={window.deviceType}
              dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px "
           >
@@ -285,9 +285,6 @@ style={{backgroundImage: `url(${docsbg})`,
                 </div>
               </div>
             </div>
-
-           
-
           
           </Carousel>
 
