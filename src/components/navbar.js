@@ -51,7 +51,7 @@ console.log("path",path)
   <div id="mySidenav" className="sidenav">
     <div className='flex float-right self-end mt-4 justify-end'>
   <div className='flex float-right justify-right self-end'>
-    <a className='text-white text-md rounded-md  home-button font-semibold'>JOIN OUR DISCORD</a>
+    <a className='text-white xl:text-md md:text-md sm:text-md text-xs rounded-md  home-button font-semibold'>JOIN OUR DISCORD</a>
     <div className='color-shade shadow-2xl'></div>
     </div>
   <div className="block float-right self-center text-3xl relative cursor-pointer md:hidden">

@@ -47,7 +47,7 @@ const Home = () => {
 
         <div className="container mt-2 py-10 mx-auto self-center justify-center flex flex-col md:flex md:flex-col lg:flex lg:flex-row align">
           <div
-            className="relative flex flex-col justify-center self-center pointer-default"
+            className="relative flex flex-col justify-center self-center xl:pt-0 md:pt-20 sm:pt-20 pt-20 pointer-default"
             style={{ cursor: "default" }}
           >
             <h4 className=" mb-5 text-center font-semibold text-white lg:self-start text-3xl">
@@ -58,7 +58,7 @@ const Home = () => {
             </h1>
             <span className='text-lg mb-5 text-center text-gray-200 lg:text-left font-semibold'>Your Ultimate Virtual Escape</span>
            
-            <p className="mb-8 mt-4 text-center text-gray-400 text-xl lg:text-left">
+            <p className="mb-8 mt-4 text-center text-gray-400 xl:text-xl md:text-lg sm:text-md text-md lg:text-left">
               Escape to the high seas and embark on a one-of-a-kind adventure with the [metaCruise] Metaverse experience.
               From the moment you step aboard our virtual ship.you'll be transportedto a world of luxury,relaxation and adventure.
             </p>
@@ -113,14 +113,14 @@ const Home = () => {
     style={{ cursor: "default" }}
   >
     <div className='text-left float-left mb-5'>
-      <span className='text-3xl text-gray-400 border-b-2 border-gray-400'>About Us</span>
+      <span className='xl:text-3xl md:text-3xl sm:text-xl text-xl text-gray-400 border-b-2 border-gray-400'>About Us</span>
       </div>
-    <h2 className=" mb-5 text-center font-semibold text-gray-300 lg:text-left lg:self-start xl:text-6xl md:text-5xl sm:text-5xl text-4xl">
+    <h2 className=" mb-5 text-center font-semibold text-gray-300 lg:text-left lg:self-start xl:text-6xl md:text-4xl sm:text-3xl text-3xl">
     Fully immersive 3D virtual environment
     </h2>
    
    
-    <p className="mb-8 mt-4 text-center text-gray-400 text-xl lg:text-left">
+    <p className="mb-8 mt-4 text-center text-gray-400 xl:text-xl md:text-xl sm:text-lg text-lg lg:text-left">
     that allows you to explore every corner of the ship interact with other players in real-time and build lasting 
     connections with people from all over the world Customize your avatar to reflect your unique style and personality
     </p>
@@ -146,7 +146,7 @@ style={{backgroundImage: `url(${docsbg})`,
           
           <div className='flex flex-col xl:w-3/5 md:w-3/5 sm:w-full w-full self-center justify-center '>
           
-             <span className="text-gray-300 xl:w-3/4 md:w-3/4 sm:w-full py-6 w-full self-center font-semibold xl:text-5xl md:text-4xl sm:text-4xl text-4xl">
+             <span className="text-gray-300 xl:w-3/4 md:w-3/4 sm:w-full py-6 w-full self-center font-semibold xl:text-5xl md:text-4xl sm:text-3xl text-3xl">
                 Participate in onboard activities and events</span>
             <span className="text-gray-400 mt-5 mb-10 text-lg w-full font-normal">
      from poolside parties to themed dinners and more Discover hidden secrets and unlock new areas of the ship as you progress 
@@ -170,7 +170,7 @@ style={{backgroundImage: `url(${docsbg})`,
 <div className='color-shade-right1 float-right'></div>
 <section className="relative py-28 pointer-default" id="event">
 <div className='container mx-auto self-center justify-center align'>
-    <div className='text-4xl text-white font-semibold float-left pt-5 text-left pb-5'>Latest News</div>
+    <div className='xl:text-4xl md:text-4xl sm:text-3xl text-3xl text-white font-semibold float-left pt-5 text-left pb-5'>Latest News</div>
   
     <Carousel
              swipeable={true}
@@ -322,7 +322,7 @@ style={{backgroundImage: `url(${docsbg})`,
           <div className='flex flex-col self-center align-middle'>
           <span className='text-xl text-gray-200 mt-5 mb-5 font-semibold'>Subscribe to our newsletter</span>
           <div className='flex flex-row'>
-          <input type="text" placeholder="Type..." className='pr-24 px-2 w-96 rounded-full bg-white text-gray-600' />  
+          <input type="text" placeholder="Type..." className='pr-24 px-2 xl:w-96 md:w-96 sm:w-full w-full rounded-full bg-white text-gray-600' />  
          <div className='-ml-24 align-middle self-center flex'>
          <button className='text-white w-full text-md rounded-3xl px-3 py-2 hover:text-black icon-bg font-semibold'>Submit</button> 
           </div> 
