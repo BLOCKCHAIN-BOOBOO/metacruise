@@ -22,22 +22,22 @@ const Home = () => {
 
 
     const responsive = {
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 2,
-        },
+      
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 2,
+          items: 3,
+          slidesToSlide: 3
+
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
           items: 2,
+          slidesToSlide: 2
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
           items: 1,
+          slidesToSlide: 1
         },
       };
  
@@ -173,21 +173,23 @@ style={{backgroundImage: `url(${docsbg})`,
     <div className='xl:text-4xl md:text-4xl sm:text-3xl text-3xl text-white font-semibold float-left pt-5 text-left pb-5'>Latest News</div>
   
     <Carousel
-             swipeable={true}
+             swipeable={false}
              draggable={true}
-             showDots={false}
+            //  showDots={true}
              centerMode={true}
+             focusOnSelect={true}
              responsive={responsive}
+            //  rtl={true}
              ssr={true} // means to render carousel on server-side.
-             infinite={true}
+             infinite={false}
             //  autoPlay={window.deviceType !== "mobile" ? true : false}
-            //  autoPlaySpeed={3000}
+             autoPlaySpeed={3000}
              keyBoardControl={true}
              customTransition="all .7"
              transitionDuration={600}
-             containerClass="carousel-container w-full py-10"
+             containerClass="carousel-container justify-center w-full py-10"
             //  removeArrowOnDeviceType={["tablet", "mobile"]}
-             // deviceType={this.props.deviceType}
+            //  deviceType={this.props.deviceType}
              dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px "
           >
@@ -285,6 +287,7 @@ style={{backgroundImage: `url(${docsbg})`,
             </div>
 
            
+
           
           </Carousel>
 
